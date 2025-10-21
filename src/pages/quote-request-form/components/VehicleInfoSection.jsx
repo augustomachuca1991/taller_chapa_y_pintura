@@ -44,7 +44,7 @@ const VehicleInfoSection = ({ formData, onInputChange, errors = {} }) => {
           <Input
             label="Matrícula del Vehículo"
             type="text"
-            placeholder="Ej: 1234 ABC"
+            placeholder="Ej: ABC123 o AB123CD"
             value={formData?.licensePlate || ""}
             onChange={(e) => handleInputChange("licensePlate", e?.target?.value)}
             error={errors?.licensePlate}

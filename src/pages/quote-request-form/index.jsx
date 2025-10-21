@@ -76,8 +76,8 @@ const QuoteRequestForm = () => {
       case 1: // Vehicle Info
         if (!formData?.licensePlate?.trim()) {
           newErrors.licensePlate = "La matrícula es obligatoria";
-        } else if (!/^[0-9]{4}\s?[A-Z]{3}$/i?.test(formData?.licensePlate?.trim())) {
-          newErrors.licensePlate = "Formato de matrícula inválido (ej: 1234 ABC)";
+        } else if (!/^(?:[A-Z]{3}\d{3}|[A-Z]{2}\d{3}[A-Z]{2})$/i.test(formData?.licensePlate?.trim())) {
+          newErrors.licensePlate = "Formato de matrícula inválido (ej: ABC123 o AB123CD)";
         }
 
         if (!formData?.brand) {
