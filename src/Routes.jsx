@@ -9,6 +9,8 @@ import QuoteDetails from "./pages/quote-details";
 import WorkshopDashboard from "./pages/workshop-dashboard";
 import QuoteRequestForm from "./pages/quote-request-form";
 import CustomerDashboard from "./pages/customer-dashboard";
+import CustomerLogin from "./pages/customer-login";
+import CustomerRegistration from "./pages/customer-registration";
 
 const Routes = () => {
   return (
@@ -24,6 +26,8 @@ const Routes = () => {
           <Route path="/workshop-dashboard" element={<WorkshopDashboard />} />
           <Route path="/quote-request-form" element={<QuoteRequestForm />} />
           <Route path="/customer-dashboard" element={<CustomerDashboard />} />
+          <Route path="/customer-login" element={<CustomerLogin />} />
+          <Route path="/customer-registration" element={<CustomerRegistration />} />
           <Route path="*" element={<NotFound />} />
         </RouterRoutes>
       </ErrorBoundary>
