@@ -108,7 +108,7 @@ const TodayAppointments = ({ appointments, onReschedule, onViewDetails, classNam
                       </Button>
 
                       <Button variant="outline" size="sm" onClick={() => onReschedule(appointment)} iconName="Calendar" iconPosition="left">
-                        Reprogramar
+                        Posponer
                       </Button>
 
                       {appointment?.status === "scheduled" && (

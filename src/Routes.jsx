@@ -11,6 +11,7 @@ import QuoteRequestForm from "./pages/quote-request-form";
 import CustomerDashboard from "./pages/customer-dashboard";
 import CustomerLogin from "./pages/customer-login";
 import CustomerRegistration from "./pages/customer-registration";
+import QuoteGeneration from "./pages/quote-generation";
 
 const Routes = () => {
   return (
@@ -28,6 +29,7 @@ const Routes = () => {
           <Route path="/customer-dashboard" element={<CustomerDashboard />} />
           <Route path="/customer-login" element={<CustomerLogin />} />
           <Route path="/customer-registration" element={<CustomerRegistration />} />
+          <Route path="/quote-generation" element={<QuoteGeneration />} />
           <Route path="*" element={<NotFound />} />
         </RouterRoutes>
       </ErrorBoundary>
